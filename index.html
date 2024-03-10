@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>buscador de noticias</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Buscador de noticias</h1>
+
+        <div class="selectionContainer">
+            <label for="category">Choose Category :</label>
+            <select id="category">
+                <option value="business">negocios</option>
+                <option value="entertainment">Entretenimento</option>
+                <option value="general">General</option>
+                <option value="health">Salud</option>
+                <option value="science">Ciencia</option>
+                <option value="sports">Deportes</option>
+                <option value="technology">Tecnologia</option>
+            </select>
+            <button id="fetchCategory">buscar noticias</button>
+        </div>
+
+        <div class="searchContainer">
+            <input type="text" id="searchKeyword" placeholder="Busca aqui...">
+            <button onclick="fetchNews(true)"> buscar aqui</button>
+        </div>
+        <div id="newsContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
